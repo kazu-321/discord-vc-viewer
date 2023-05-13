@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            VC-VIEWER
+        </title>
+        <script>
+            function openwin(){
+                var w;
+                w=window.open("https://streamkit.discord.com/overlay/voice/"+form.server.value+"/"+form.vc.value,"vc-viewer","resizable=yes,width=600,height=400");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>VC-VIEWER</h1>
+        <form name="form">
+            <h2>SERVER-ID   :<input type="number" name="server"></h2>
+            <h2>VC-ID       :<input type="number" name="vc"></h2>
+            <input type="submit" onClick="openwin()">
+        </form>
+    </body>
+</html>
